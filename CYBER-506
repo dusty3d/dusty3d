@@ -1,1 +1,78 @@
+What are some of the parts of this lab that are not secure?  
+The username and password (access control) 
+Uses insecure ports 
+Vulnerable open source dependencies 
+What would your next steps be to make them more secure? 
+Change the username and password to something more complex and not clear text 
+Use secure ports 443 (HTTPS) or 22 (SSH) 
+Be careful what open source containers are used. Use trusted sources. 
+Implement a layered security approach 
+Utilize multiple safeguards 
+Enable authentication 
+Network segmentation 
+TLS/SSL encryption 
+Use Docker Content Trust (DCT) to implement the signing of images. Use verification tools to guarantee the authenticity and integrity of images 
+Limit container capability and runtime 
+Scan images to seek out container vulnerabilities, configuration issues and updates 
+Log and monitor containers events, network activity, unusual activity and review system logs 
+What are some of the features of this lab that make it at least somewhat secure? 
+It is virtualized containers segmented for security and linear transparency 
+Images are from a secure source 
+What did you learn from this lab? 
+This lab was great but ran out of time and didn’t finish. I made it to the certificate validation portion of the lab. I learned Docker is virtualization software that allows for the segmentation and sharing of programs. If appropriated correctly container software can remove the “it worked on my machine” dilemma. This allows for a more streamlined approach to the information technology development pipeline for business and consumers. 
+Businesses can layer their security approach with virtualized compartmentalization software such as Docker, PodMan or other container software.  
 
+
+Objective 
+
+Gain understanding of Docker and RAIDIUS to erect a functioning access point (AP).  
+
+Install Docker on Windows 11. (Complete) 
+
+ Researching container (Using Welcome Container in Windows Docker Desktop (http://localhost:8088/) 
+
+ Researching “creating an image using a Dockerfile.” 
+
+ Researching ‘Cloning GitHub repository” 
+
+ Read “Setting up WAP with Docker and RAIDIUS.” (Instructions nonfunctional) 
+
+Reviewed Docker tutorials 
+
+https://www.youtube.com/watch?v=rOTqprHv1YE 
+
+https://www.youtube.com/watch?v=pg19Z8LL06w&t=1589s 
+
+https://www.youtube.com/watch?v=gAkwW2tuIqE 
+
+https://www.youtube.com/watch?v=RqTEHSBrYFw 
+
+Install VS Code 
+
+Install VS Code Docker extensions (Docker, Docker: Explorer, Compose, Run, Syntax, Registry, Builder, Dive, Python,) 
+
+Install VS Code YAML Extension   
+
+Test Docker in command terminal (Functional) 
+
+Start Docker Daemon 
+
+Open host terminal  
+
+docker 
+
+docker run docker/whalesay cowsay “Hey Team” 
+
+Works! I successfully installed Docker on my host system and touched my first container. Docker is cool virtualized computing. 
+
+Whalesay “Hey Team”  
+
+ 
+
+ 
+
+Pull Postgres 15.2 image from Docker 
+
+ 
+
+ 
